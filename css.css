@@ -1,0 +1,119 @@
+* { font-family: 'Do Hyeon', sans-serif; font-weight: lighter;}
+
+div#table{
+    float: left;
+    margin-left: 1%;
+    font-size: 21px;
+}
+h2 {
+    float: right;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    font-size: 30px;
+    text-align: center;
+    border-style: solid;
+    color: midnightblue;
+    width: 550px;
+}
+
+div#description{
+    float: right;
+    position: fixed;
+    border-style: solid;
+    border: midnightblue;
+    top: 20%;
+    left: 48%;
+    font-size: 25px;
+    width: 615px;
+    text-align: center;
+}
+div#stopwatch {
+    float: right;
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    font-size: 80px;
+    text-align: center;
+    width: 550px;
+}
+p#output{
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+}
+
+a:link { color: midnightblue; text-decoration: none; }
+a:visited { color: midnightblue; text-decoration: none; }
+a:hover { color: rgb(98, 176, 202); text-decoration: underline; }
+
+/*table*/
+table.type09 {
+	border-collapse: collapse;
+	text-align: left;
+    line-height: 1;
+}
+table.type09 thead th {
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	color: #369;
+	border-bottom: 3px solid #036;
+}
+table.type09 tbody th {
+	width: 80px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+	background: #f3f6f7;
+}
+table.type09 td {
+	width: 150px;
+	padding: 10px;
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+}
+
+/* button */
+body:before{
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+}
+button{
+    font-size: 20px;
+    background: midnightblue;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:50px;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+button:hover{
+    background:#fff;
+    color: midnightblue;
+}
+button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: midnightblue;
+    transition:400ms ease all;
+}
+button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}

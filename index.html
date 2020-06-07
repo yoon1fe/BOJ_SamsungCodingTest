@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="EUC-KR">
+    <title>백준 문제 정리 사이트</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css.css">
+    </link>
+</head>
+
+<body>
+
+    <h2 >BOJ 삼성전자 S직군 SW 역량 테스트 기출 문제집</h2>
+    
+    <script src="stopwatch.js" charset='utf-8'></script>
+    <div id='table'>
+        <script>
+            var userID = 'yoon1fe';
+            function Prob(number, name) {
+                this.number = number;
+                this.name = name;
+                this.link = "https://www.acmicpc.net/problem/" + number;
+                this.code = "https://www.acmicpc.net/status?from_mine=1&problem_id=" + number + "&user_id=" + userID;
+            }
+
+            var probs = [
+                new Prob('13460', '구슬 탈출2'),
+                new Prob('12100', '2048(Easy)'),
+                new Prob('3190', '뱀'),
+                new Prob('13458', '시험 감독'),
+                new Prob('14499', '주사위 굴리기'),
+                new Prob('14500', '테트로미노'),
+                new Prob('14501', '퇴사'),
+                new Prob('14502', '연구소'),
+                new Prob('14503', '로봇 청소기'),
+                new Prob('14888', '연산자 끼워넣기'),
+                new Prob('14889', '스타트와 링크'),
+                new Prob('14890', '경사로'),
+                new Prob('14891', '톱니바퀴'),
+                new Prob('15683', '감시'),
+                new Prob('15684', '사다리 조작'),
+                new Prob('15685', '드래곤 커브'),
+                new Prob('15686', '치킨 배달'),
+                new Prob('5373', '큐빙'),
+                new Prob('16234', '인구 이동'),
+                new Prob('16235', '나무 재테크'),
+                new Prob('16236', '아기 상어'),
+                new Prob('17144', '미세먼지 안녕!'),
+                new Prob('17143', '낚시왕'),
+                new Prob('17140', '이차원 배열과 연산'),
+                new Prob('17142', '연구소 3'),
+                new Prob('17779', '게리맨더링 2'),
+                new Prob('17837', '새로운 게임 2'),
+                new Prob('17822', '원판 돌리기'),
+                new Prob('17825', '주사위 윷놀이'),
+            ]
+
+            document.write("<table class = 'type09'");
+            document.write("<thead> <tr>");
+            document.write("<th scope='cols'>문제 번호</th>");
+            document.write("<th scope='cols'>제목</th>");
+            document.write("<th scope='cols'>링크</th>");
+            document.write("<th scope='cols'>내 코드보기</th> </tr> </thead>");
+            document.write("<tbody>");
+
+            for (var i = 0; i < probs.length; i++) {
+                document.write("<tr>");
+                document.write("<th scope = 'row' id = num" + i + "></th>");
+                document.write("<td id = name" + i + "></td>");
+                document.write("<td><a id = link" + i + " target = '_blank' onclick='start()'>문제 풀러가기</a></td>");
+                document.write("<td><a id = code" + i + " target = '_blank'>코드 보러가기</a></td>");
+                document.write("</tr>");
+            }
+            document.write("</tbody> </table>");
+
+            for (var i = 0; i < probs.length; i++) {
+                document.getElementById("num" + i).textContent = probs[i].number;
+                document.getElementById("name" + i).innerHTML = probs[i].name;
+                document.getElementById("link" + i).setAttribute('href', probs[i].link);
+                document.getElementById("code" + i).setAttribute('href', probs[i].code);
+            }
+        </script>
+    </div>
+
+    <div id = 'description'>
+        <p>
+            소프트웨어 역량 테스트는 소프트웨어 직군에 지원한 분들을 대상으로 SW 문제해결 역량을 측정하기 위해 도입되었으며
+            주어진 문제에 대한 답안을 직접 코딩하여 문제를 해결하는 실기 방식의 테스트입니다.
+            문항은 두 문제가 출제되고, 응시 시간은 세시간입니다.
+        </p><p>
+            삼성 SW 역량 테스트 기출문제들을 풀어보고 동시에 푸는 시간까지 체크해보세요!
+        </p>
+    </div>
+
+    <div id="stopwatch">
+        <p id="output">00:00:0</p>
+        <button id="pause" onclick="pause()">중지</button>
+        <button onclick="reset()">재설정</button>
+    </div>
+
+</body>
+
+</html>
