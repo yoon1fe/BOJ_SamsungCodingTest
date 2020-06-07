@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <meta charset="EUC-KR">
-    <title>¹éÁØ ¹®Á¦ Á¤¸® »çÀÌÆ®</title>
+    <meta charset="utf-8">
+    <title>ë°±ì¤€ ë¬¸ì œ ì •ë¦¬ ì‚¬ì´íŠ¸</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css.css">
@@ -12,7 +12,7 @@
 
 <body>
 
-    <h2 >BOJ »ï¼ºÀüÀÚ SÁ÷±º SW ¿ª·® Å×½ºÆ® ±âÃâ ¹®Á¦Áý</h2>
+    <h2 >BOJ ì‚¼ì„±ì „ìž Sì§êµ° SW ì—­ëŸ‰ í…ŒìŠ¤íŠ¸ ê¸°ì¶œ ë¬¸ì œì§‘</h2>
     
     <script src="stopwatch.js" charset='utf-8'></script>
     <div id='table'>
@@ -26,51 +26,51 @@
             }
 
             var probs = [
-                new Prob('13460', '±¸½½ Å»Ãâ2'),
+                new Prob('13460', 'êµ¬ìŠ¬ íƒˆì¶œ2'),
                 new Prob('12100', '2048(Easy)'),
-                new Prob('3190', '¹ì'),
-                new Prob('13458', '½ÃÇè °¨µ¶'),
-                new Prob('14499', 'ÁÖ»çÀ§ ±¼¸®±â'),
-                new Prob('14500', 'Å×Æ®·Î¹Ì³ë'),
-                new Prob('14501', 'Åð»ç'),
-                new Prob('14502', '¿¬±¸¼Ò'),
-                new Prob('14503', '·Îº¿ Ã»¼Ò±â'),
-                new Prob('14888', '¿¬»êÀÚ ³¢¿ö³Ö±â'),
-                new Prob('14889', '½ºÅ¸Æ®¿Í ¸µÅ©'),
-                new Prob('14890', '°æ»ç·Î'),
-                new Prob('14891', 'Åé´Ï¹ÙÄû'),
-                new Prob('15683', '°¨½Ã'),
-                new Prob('15684', '»ç´Ù¸® Á¶ÀÛ'),
-                new Prob('15685', 'µå·¡°ï Ä¿ºê'),
-                new Prob('15686', 'Ä¡Å² ¹è´Þ'),
-                new Prob('5373', 'Å¥ºù'),
-                new Prob('16234', 'ÀÎ±¸ ÀÌµ¿'),
-                new Prob('16235', '³ª¹« ÀçÅ×Å©'),
-                new Prob('16236', '¾Æ±â »ó¾î'),
-                new Prob('17144', '¹Ì¼¼¸ÕÁö ¾È³ç!'),
-                new Prob('17143', '³¬½Ã¿Õ'),
-                new Prob('17140', 'ÀÌÂ÷¿ø ¹è¿­°ú ¿¬»ê'),
-                new Prob('17142', '¿¬±¸¼Ò 3'),
-                new Prob('17779', '°Ô¸®¸Ç´õ¸µ 2'),
-                new Prob('17837', '»õ·Î¿î °ÔÀÓ 2'),
-                new Prob('17822', '¿øÆÇ µ¹¸®±â'),
-                new Prob('17825', 'ÁÖ»çÀ§ À·³îÀÌ'),
+                new Prob('3190', 'ë±€'),
+                new Prob('13458', 'ì‹œí—˜ ê°ë…'),
+                new Prob('14499', 'ì£¼ì‚¬ìœ„ êµ´ë¦¬ê¸°'),
+                new Prob('14500', 'í…ŒíŠ¸ë¡œë¯¸ë…¸'),
+                new Prob('14501', 'í‡´ì‚¬'),
+                new Prob('14502', 'ì—°êµ¬ì†Œ'),
+                new Prob('14503', 'ë¡œë´‡ ì²­ì†Œê¸°'),
+                new Prob('14888', 'ì—°ì‚°ìž ë¼ì›Œë„£ê¸°'),
+                new Prob('14889', 'ìŠ¤íƒ€íŠ¸ì™€ ë§í¬'),
+                new Prob('14890', 'ê²½ì‚¬ë¡œ'),
+                new Prob('14891', 'í†±ë‹ˆë°”í€´'),
+                new Prob('15683', 'ê°ì‹œ'),
+                new Prob('15684', 'ì‚¬ë‹¤ë¦¬ ì¡°ìž‘'),
+                new Prob('15685', 'ë“œëž˜ê³¤ ì»¤ë¸Œ'),
+                new Prob('15686', 'ì¹˜í‚¨ ë°°ë‹¬'),
+                new Prob('5373', 'íë¹™'),
+                new Prob('16234', 'ì¸êµ¬ ì´ë™'),
+                new Prob('16235', 'ë‚˜ë¬´ ìž¬í…Œí¬'),
+                new Prob('16236', 'ì•„ê¸° ìƒì–´'),
+                new Prob('17144', 'ë¯¸ì„¸ë¨¼ì§€ ì•ˆë…•!'),
+                new Prob('17143', 'ë‚šì‹œì™•'),
+                new Prob('17140', 'ì´ì°¨ì› ë°°ì—´ê³¼ ì—°ì‚°'),
+                new Prob('17142', 'ì—°êµ¬ì†Œ 3'),
+                new Prob('17779', 'ê²Œë¦¬ë§¨ë”ë§ 2'),
+                new Prob('17837', 'ìƒˆë¡œìš´ ê²Œìž„ 2'),
+                new Prob('17822', 'ì›íŒ ëŒë¦¬ê¸°'),
+                new Prob('17825', 'ì£¼ì‚¬ìœ„ ìœ·ë†€ì´'),
             ]
 
             document.write("<table class = 'type09'");
             document.write("<thead> <tr>");
-            document.write("<th scope='cols'>¹®Á¦ ¹øÈ£</th>");
-            document.write("<th scope='cols'>Á¦¸ñ</th>");
-            document.write("<th scope='cols'>¸µÅ©</th>");
-            document.write("<th scope='cols'>³» ÄÚµåº¸±â</th> </tr> </thead>");
+            document.write("<th scope='cols'>ë¬¸ì œ ë²ˆí˜¸</th>");
+            document.write("<th scope='cols'>ì œëª©</th>");
+            document.write("<th scope='cols'>ë§í¬</th>");
+            document.write("<th scope='cols'>ë‚´ ì½”ë“œë³´ê¸°</th> </tr> </thead>");
             document.write("<tbody>");
 
             for (var i = 0; i < probs.length; i++) {
                 document.write("<tr>");
                 document.write("<th scope = 'row' id = num" + i + "></th>");
                 document.write("<td id = name" + i + "></td>");
-                document.write("<td><a id = link" + i + " target = '_blank' onclick='start()'>¹®Á¦ Ç®·¯°¡±â</a></td>");
-                document.write("<td><a id = code" + i + " target = '_blank'>ÄÚµå º¸·¯°¡±â</a></td>");
+                document.write("<td><a id = link" + i + " target = '_blank' onclick='start()'>ë¬¸ì œ í’€ëŸ¬ê°€ê¸°</a></td>");
+                document.write("<td><a id = code" + i + " target = '_blank'>ì½”ë“œ ë³´ëŸ¬ê°€ê¸°</a></td>");
                 document.write("</tr>");
             }
             document.write("</tbody> </table>");
@@ -86,18 +86,18 @@
 
     <div id = 'description'>
         <p>
-            ¼ÒÇÁÆ®¿þ¾î ¿ª·® Å×½ºÆ®´Â ¼ÒÇÁÆ®¿þ¾î Á÷±º¿¡ Áö¿øÇÑ ºÐµéÀ» ´ë»óÀ¸·Î SW ¹®Á¦ÇØ°á ¿ª·®À» ÃøÁ¤ÇÏ±â À§ÇØ µµÀÔµÇ¾úÀ¸¸ç
-            ÁÖ¾îÁø ¹®Á¦¿¡ ´ëÇÑ ´ä¾ÈÀ» Á÷Á¢ ÄÚµùÇÏ¿© ¹®Á¦¸¦ ÇØ°áÇÏ´Â ½Ç±â ¹æ½ÄÀÇ Å×½ºÆ®ÀÔ´Ï´Ù.
-            ¹®Ç×Àº µÎ ¹®Á¦°¡ ÃâÁ¦µÇ°í, ÀÀ½Ã ½Ã°£Àº ¼¼½Ã°£ÀÔ´Ï´Ù.
+            ì†Œí”„íŠ¸ì›¨ì–´ ì—­ëŸ‰ í…ŒìŠ¤íŠ¸ëŠ” ì†Œí”„íŠ¸ì›¨ì–´ ì§êµ°ì— ì§€ì›í•œ ë¶„ë“¤ì„ ëŒ€ìƒìœ¼ë¡œ SW ë¬¸ì œí•´ê²° ì—­ëŸ‰ì„ ì¸¡ì •í•˜ê¸° ìœ„í•´ ë„ìž…ë˜ì—ˆìœ¼ë©°
+            ì£¼ì–´ì§„ ë¬¸ì œì— ëŒ€í•œ ë‹µì•ˆì„ ì§ì ‘ ì½”ë”©í•˜ì—¬ ë¬¸ì œë¥¼ í•´ê²°í•˜ëŠ” ì‹¤ê¸° ë°©ì‹ì˜ í…ŒìŠ¤íŠ¸ìž…ë‹ˆë‹¤.
+            ë¬¸í•­ì€ ë‘ ë¬¸ì œê°€ ì¶œì œë˜ê³ , ì‘ì‹œ ì‹œê°„ì€ ì„¸ì‹œê°„ìž…ë‹ˆë‹¤.
         </p><p>
-            »ï¼º SW ¿ª·® Å×½ºÆ® ±âÃâ¹®Á¦µéÀ» Ç®¾îº¸°í µ¿½Ã¿¡ Çª´Â ½Ã°£±îÁö Ã¼Å©ÇØº¸¼¼¿ä!
+            ì‚¼ì„± SW ì—­ëŸ‰ í…ŒìŠ¤íŠ¸ ê¸°ì¶œë¬¸ì œë“¤ì„ í’€ì–´ë³´ê³  ë™ì‹œì— í‘¸ëŠ” ì‹œê°„ê¹Œì§€ ì²´í¬í•´ë³´ì„¸ìš”!
         </p>
     </div>
 
     <div id="stopwatch">
         <p id="output">00:00:0</p>
-        <button id="pause" onclick="pause()">ÁßÁö</button>
-        <button onclick="reset()">Àç¼³Á¤</button>
+        <button id="pause" onclick="pause()">ì¤‘ì§€</button>
+        <button onclick="reset()">ìž¬ì„¤ì •</button>
     </div>
 
 </body>
