@@ -11,13 +11,14 @@
 </head>
 
 <body>
-
+    <script>
+        var userID = prompt("BOJ 아이디를 입력하세요.");
+    </script>
     <h2 >BOJ 삼성전자 S직군 SW 역량 테스트 기출 문제집</h2>
     
     <script src="stopwatch.js" charset='utf-8'></script>
     <div id='table'>
         <script>
-            var userID = 'yoon1fe';
             function Prob(number, name) {
                 this.number = number;
                 this.name = name;
@@ -55,6 +56,8 @@
                 new Prob('17837', '새로운 게임 2'),
                 new Prob('17822', '원판 돌리기'),
                 new Prob('17825', '주사위 윷놀이'),
+                new Prob('19235', '모노미노도미노'),
+                new Prob('19236', '청소년 상어')
             ]
 
             document.write("<table class = 'type09'");

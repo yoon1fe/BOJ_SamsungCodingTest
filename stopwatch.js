@@ -11,20 +11,19 @@ function pause() {
         if (running == 0) {
             running = 1;
             increment();
-            $("#pause").html("중지");
+            document.getElementById("pause").innerHTML = "중지";
         } 
         else {
             running = 0;
-            $("#pause").html("시작");
+            document.getElementById("pause").innerHTML = "시작";
         }
     }
 }
 
 function reset() {
     running = 0;
-    time = 0;
-    $("#pause").html("중지");
-    $("#output").html("00:00:0");
+    document.getElementById("pause").innerHTML = "중지";
+    time = 0;document.getElementById("output").innerHTML = "00:00:0";
 }
 
 function increment() {
