@@ -23,7 +23,8 @@ function pause() {
 function reset() {
     running = 0;
     document.getElementById("pause").innerHTML = "중지";
-    time = 0;document.getElementById("output").innerHTML = "00:00:0";
+    time = 0;
+    document.getElementById("output").innerHTML = "00:00:0";
 }
 
 function increment() {
